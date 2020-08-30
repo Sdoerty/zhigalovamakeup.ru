@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    {#    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">#}
+    {#    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">#}
+    {#    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">#}
+    {#    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">#}
+    {#    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">#}
+    {% block title %} {% endblock %}
+
+    {#    test CSS#}
+    {##}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/bootstrap.min.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/flexslider.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/jquery.fancybox.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/main.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/responsive.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/btn.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/animate.min.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/animate.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/modal.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/icomoon.css">#}
+    {#    <link rel="stylesheet" type="text/css" href="../staticfiles/css/all.css">#}
+
+
+    {# CSS #}
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&display=swap"
+          rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/flexslider.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fancybox.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/btn.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/modal.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/icomoon.css' %}">
+
+
+</head>
+<body>
+
+
+<header id="header">
+    <div class="header-content clearfix">
+        <a class="logo" href="#"><img src="/media/img/logo.png" alt=" "></a>
+        <nav class="navigation" role="navigation">
+            <ul class="primary-nav">
+                <li><a href="#ame" style="color: #404040;">Обо мне</a></li>
+                <li><a href="#mworks" style="color: #404040;">Мои работы</a></li>
+                <li><a href="#insta" style="color: #404040;">Мой Instagram</a></li>
+                <li><a href="#price" style="color: #404040;">Услуги и цены</a></li>
+                <li><a href="#reviews" style="color: #404040;">Отзывы</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="nav-toggle">Menu<span></span></a>
+    </div><!-- header content -->
+</header><!-- header -->
+
+<div class="phon">
+
+    <div class="overlay">
+        <div class="overlay_to">
+            <div class="mt-5">
+                <h3 style="color: white; z-index: 200">СВАДЕБНЫЙ СТИЛИСТ ЖИГАЛОВА АЛИНА</h3>
+                <h1 style="color: white; z-index:200; font-family: 'Cormorant Infant', serif;">Будь идеальной в
+                    самый<br>важный день...</h1>
+                <!--<a href="https://api.whatsapp.com/send?phone=79259194629">sssss</a>-->
+                <button id="button1" class="bubbly-button"><b>Забронировать дату</b></button>
+                <button id="button2" class="bubbly-button"><b>Бесплатная консультация</b></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<section id="features" class="features section">
+    <div id="fh5co-portfolio">
+        <div class="container" style="margin-top: -50px">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center tittle__container"><br>
+                    <h2 id="ame" class="tittle__prof text-muted">Обо мне</h2>
+                    <hr class="hrp" style="width: 300px; margin: auto">
+                    <br> <br>
+                </div>
+                <div class="project">
+                    <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                        <div class="mt-5">
+                            <h2>Привет, прекрастная невеста!</h2>
+
+                            <p class="text-justify">Меня зовут Жигалова Алина. Я свадебный стилист, а также бровист
+                                и лашмейкер. </p>
+                            <p class="text-justify">Я создаю нежные, естественные и стойкие образы для невест Москвы
+                                и Московской области.</p>
+                            <p class="text-justify">Для меня важно чтобы в день свадьбы ты была на высоте и ничто не
+                                отвлекало тебя от счастливых мгновений. </p>
+                            <p class="text-justify">Давай познакомимся поближе 😊 </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-push-1 animate-box img_luz" data-animate-effect="fadeInLeft">
+                        <img style="border-radius: 3px;" class="img-responsive" src="/media/img/alina.jpg" alt=" ">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center tittle__container">
+                <h2 class="tittle__prof text-muted" style="margin-top: 100px;">Почему невесты доверяют мне</h2>
+                <hr class="hrp">
+                <br> <br>
+            </div>
+            <div class="col-md-4 col-sm-6 feature text-center">
+                <span class="icon"><img src="/media/img/bride.png" style="width: 92px; height: 92px;"></span>
+                <div class="feature-content">
+                    <h4>Создание образа</h4>
+                    <p>Создаю образы под ключ. Твой образ будет целостностным и стильным в моих руках.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 feature text-center">
+                <span class="icon"><img src="/media/img/choice.png" style="width: 92px; height: 92px;"></span>
+                <div class="feature-content">
+                    <h4>Помощь с выбором</h4>
+                    <p>Всегда на связи. Помогу подобрать образ и аксессуары согласно тенденциям. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 feature text-center">
+                <span class="icon"><img src="/media/img/candy.png" style="width: 92px; height: 92px;"></span>
+                <div class="feature-content">
+                    <h4>Дополнительная конфетка</h4>
+                    <p>В стоимость входит SPA подготовка к макияжу и украшение ручной работы для прически. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 feature text-center">
+                <span class="icon"><img src="/media/img/cosm.png" style="width: 92px; height: 92px;"></span>
+                <div class="feature-content">
+                    <h4>Профессиональная косметика</h4>
+                    <p>В моем кейсе только профессиональная и люксовая косметика известных брендов. Будь уверена в
+                        стойкости образа. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 feature text-center">
+                <span class="icon"><img src="/media/img/time.png" style="width: 92px; height: 92px;"></span>
+                <div class="feature-content">
+                    <h4>Приеду в любое время </h4>
+                    <p>На дом, в отель или на торжества - 24/7</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 feature text-center">
+                <span class="icon"><img src="/media/img/hands.png" style="width: 92px; height: 92px;"></span>
+                <div class="feature-content">
+                    <h4>Работаю по договору</h4>
+                    <p>Посоветую лучших. За годы работы в свадебной сфере собрала лучшую команду - фотографы,
+                        видеографы, стилисты.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+
+
+    <div id="fh5co-portfolio">
+
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center tittle__container"><br><br><br>
+                <h2 id="price" class="tittle__ text-muted">Услуги и цены</h2>
+                <hr class="hrp" style="width: 400px;margin: auto">
+                <br>
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <h4 style="opacity: 0.5;">Бронирование даты производится после внесения предоплаты в размере
+                        <b>-500₽</b>
+                        и сохраняет за вами стоимость услуг на момент бронирования.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="project"><br><br>
+
+                <div class="col-sm-12animate-box" data-animate-effect="fadeInRight">
+                    <div class="mt">
+                        <h3 style="text-align: center;">СВАДЕБНЫЙ ОБРАЗ</h3> <br>
+                        <ul class="list-nav">
+                            <li>
+                                <div class="zag">МАКИЯЖ + ПРИЧЕСКА
+                                    <div class="prse"><b>5000₽</b></div>
+                                </div>
+                                <br><span>Выезд с 8:00 в пределах МКАД и Одинцово включен в стоимость.<br>Ранний выезд и
+                                выезд в отдаленные районы оплачевается<br>согласно оплаты за такси.</span>
+                            </li>
+                            <hr>
+                            <li></i>
+                                <div class="zag">РЕПЕТИЦИЯ
+                                    <div class="prse"><b>4000₽</b></div>
+                                </div>
+                                <br><span>Подбор образа с отработкой проходит у меня в студии в Одинцово.<br>Длительность
+                                3 часа.</span>
+                            </li>
+                            <hr>
+                            <li></i>
+                                <div class="zag">ПРИЧЕСКА ИЛИ МАКИЯЖ ДЛЯ ГОСТЕЙ
+                                    <div class="prse"><b>2000₽</b></div>
+                                </div>
+                                <br><span>1500₽/от 2х человек (экономия до 30%)<br>Сборы с невестой по одному адресу. 1
+                                человек/1 час.</span>
+                            </li>
+                            <hr>
+                            <li></i>
+                                <div class="zag">ПРИЧЕСКА+МАКИЯЖ ДЛЯ ГОСТЕЙ
+                                    <div class="prse"><b>3000₽</b></div>
+                                </div>
+                                <br><span>2500₽/от 2х человек.<br>Сборы по одному адресу с невестой. 1,5 часа/1 человек.</span>
+                            </li>
+                            <hr>
+                        </ul>
+
+                    </div>
+                </div>
+                {#                    <div class="col-sm-6 animate-box" data-animate-effect="fadeInRight">#}
+                {#                        <div class="mt">#}
+                {#                            <h3 style="text-align: center;">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h3>#}
+                {#                            <p>Все процедуры необходимо делать минимум за 3дня до свадьбы.</p><br><br>#}
+                {#                            <h3 style="text-align: center;">НАРАЩИВАНИЕ РЕСНИЦ</h3>#}
+                {#                            <ul class="list-nav">#}
+                {#                                <li><div class="zag">Классическое наращивание<div class="prse"><b>1500₽</b></div></div></li><hr>#}
+                {#                                <li></i><div class="zag">Объемное наращивание 2D<div class="prse"><b>2000₽</b></div></div></li><hr>#}
+                {#                                <li></i><div class="zag">Объемное наращивание 3D<div class="prse"><b>2500₽</b></div></div></li><hr>#}
+                {#                                <p>Как выбрать?Классика - для любительниц натуральных ресничек, не корректирует форму глаза.Объемное наращивание позволяет изменить форму глаза и выглядит ярко.</p><hr>#}
+                {#                                <li></i><div class="zag">АРХИТЕКТУРА БРОВЕЙ<div class="prse"><b>1500₽</b></div></div><br>Что будем делать? Спа-очищение  бровей, измерение и выведение согласно математической формуле формы брови. Нанесение brow-пасты и заполнение краской Refectocell. Удалим лишние волоски пинцетом, ниточкой или сахаром на ваш выбор.В завершение нанесем масла для питания бровок и закрепления краски.</li><hr>#}
+                {#                            </ul>#}
+                {##}
+                {#                        </div>#}
+                {#                    </div>#}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="teams" class="section teams" style="background-color: #F8F8F8;">
+    <div class="container">
+
+        <h2 style="margin-top: -200px;" id="reviews" class="tittle__ text-muted">Отзывы счастливых невест</h2>
+        <hr class="hrp" style="width: 700px;margin: auto">
+        <br><br>
+        <div class="row">
+
+            <div class="sreviews">
+                <div class="clear"></div>
+                <div class="clear"></div>
+                <div class="from-them">
+                    <p>Пунктуальная, общительная девушка. Поможет определиться с макияжем и прической тем, кто не
+                        знает что хочет. Макияж и прическа продержались весь день не смотря на то, что я попала под
+                        небольшой дождь.</p>
+                </div>
+                <div class="clear"></div>
+                <div class="from-me">
+                    <p>Алина, потрясающий мастер!!! Превзошла все мои ожидания!!!! Спасибо за прекрасный образ и
+                        свадебное настроение!!!!😊😊😊</p>
+                </div>
+                <div class="clear"></div>
+                <div class="from-them">
+                    <p>Огромное спасибо Алине за свадебную прическу и макияж! Прическа получилась намного лучше чем
+                        я ожидала, с учетом моей длины волос! Отдельное спасибо за атмосферу и моральную поддержку в
+                        самое ответственное утро невесты!</p>
+                </div>
+                <div class="clear"></div>
+                <div class="from-me">
+                    <p>С Алиной очень легко и приятно работать. Помимо свадебного образа получила много полезной
+                        информации о макияже и косметике. Ну а макияж и прическа получились очень красивыми и
+                        держались долго. Хоть создавали образ без репетиции, вышло все так как я хотела. Алина,
+                        спасибо Вам большое! Обязательно обращусь к Вам еще!!</p>
+                </div>
+                <div class="clear"></div>
+                <div class="from-them">
+                    <p>Алина, спасибо!🌺
+                        Жених был в восторге.😊Всем очень нравился образ, очень нежно получилось! Вы волшебница,
+                        большое спасибо!😊🌼🌺🔥🎈</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section><!-- teams -->
+
+
+<div id="maps">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ac3f5a01bb47e1d973dbaa80fa22f835a9ba80aca47937277269919074f41ff&amp;source=constructor"
+            width="100%" height="400" frameborder="0"></iframe>
+</div>
+
+
+<footer class="footer" style="margin-top: -10px">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-12">
+                    <a href="#ame">ОБО МНЕ</a>
+                    <a style="margin-left: 20px;" href="#mworks">МОИ РАБОТЫ</a>
+                    <a style="margin-left: 20px;" href="#insta">МОЙ INSTAGTAM</a>
+                    <a style="margin-left: 20px;" href="#price">УСЛУГИ И ЦЕНЫ</a>
+                    <a style="margin-left: 20px;" href="#reviews">ОТЗЫВЫ</a>
+                </div>
+
+                <div class="footer-col col-md-6" style="margin-top: -50px;">
+                    <h5>Share with Love</h5>
+                    <ul class="footer-share">
+                        <li><a href="https://www.facebook.com/Beauty_room_by_alina-272082016952020/"><i
+                                class="fa fa-facebook"></i></a></li>
+                        <li>
+                            <a href="https://www.instagram.com/beauti_room_by_alina/?utm_source=ig_profile_share&igshid=qf3eq7dfthap"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.vk.com/alina.zhigalova4444"><i class="fa fa-vk"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-6" style="margin-top: -50px;">
+                    <h4 style="color: #F0FFFF">Контакты:</h4>
+                    <p>+7 (926) 937-00-56</p>
+                    <p>a.zhyhalova@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- footer top -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="col-md-12">
+                <p>Copyright © 2020. All Rights Reserved<br>Made with <i class="fa fa-heart pulse"></i> by <a
+                        href="https://www.instagram.com/captain.mountain/">Romero</a></p>
+            </div>
+        </div>
+    </div>
+</footer><!-- footer -->
+
+{# JS #}
+<script>window.jQuery || document.write('<script src="{% static 'js/jquery.min.js' %}"><\/script>')</script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/retina.min.js' %}"></script>
+<script src="{% static 'js/modernizr.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/btn.js' %}"></script>
+<script src="{% static 'js/modal.js' %}"></script>
+
+{#<script>window.jQuery || document.write('<script src="../staticfiles/js/jquery.min.js"><\/script>')</script>#}
+{#<script src="../staticfiles/js/bootstrap.min.js"></script>#}
+{#<script src="../staticfiles/js/jquery.flexslider-min.js"></script>#}
+{#<script src="../staticfiles/js/jquery.fancybox.pack.js"></script>#}
+{#<script src="../staticfiles/js/jquery.waypoints.min.js"></script>#}
+{#<script src="../staticfiles/js/retina.min.js"></script>#}
+{#<script src="../staticfiles/js/modernizr.js"></script>#}
+{#<script src="../staticfiles/js/main.js"></script>#}
+{#<script src="../staticfiles/js/btn.js"></script>#}
+{#<script src="../staticfiles/js/modal.js"></script>#}
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXX-X');
+    ga('send', 'pageview');
+</script>
+
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "272082016952020/", // Facebook page ID
+            whatsapp: "+79269370056", // WhatsApp number
+            vkontakte: "alina.zhigalova4444", // VKontakte page name
+            email: "info@zhigalovamakeup.ru", // Email
+            sms: "+79269370056", // Sms phone number
+            //company_logo_url: "autodoktor.com.ua/wp-content/uploads/Logo/Total-logo-earth.png",
+            greeting_message: "Привет, прекрастная невеста, жду твои вопросики в этот чат :)", // Text of greeting message
+            call_to_action: "Напиши мне 😉", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,sms,email,vkontakte,facebook", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () {
+            WhWidgetSendButton.init(host, proto, options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
+
+</body>
+
+</html>

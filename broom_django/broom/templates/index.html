@@ -1,0 +1,165 @@
+{% extends 'base_generic.html' %}
+{% load static %}
+
+{% block title %} <title>Свадебный стилист визажист Алина Жигалова</title> {% endblock %}
+
+{% block content %}
+
+
+    <section id="works" class="works section">
+        <div class="container-fluid" style="margin-top: -50px">
+            <div class="row no-gutter">
+                <div class="col-md-8 col-md-offset-2 text-center tittle__container">
+                    <h2 id="mworks" class="tittle__prof text-muted">Мои работы</h2>
+                    <hr class="hrp" style="width: 400px;margin: auto">
+                    <br> <br>
+                </div>
+                {% for i in num_img %}
+                    <div id="photoprop" class="col-lg-3 col-md-6 col-sm-6 work">
+                        <a href="{{ i.model_img.url }}" class="work-box">
+                            <img class="myimages" src="{{ i.model_img.url }}" alt="">
+                            <div class="overlay">
+
+                            </div><!-- overlay -->
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+    <div id="fh5portfolio">
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center tittle__container">
+                    <h2 id="insta" class="tittle__ text-muted">Мои работы в Instagram <a
+                            href="https://www.instagram.com/beauty_room_by_alina/?utm_source=ig_profile_share&igshid=qf3eq7dfthap"><img
+                            src="/media/img/inst.png" width="50"
+                            height="50"></a></h2>
+                    <hr class="hrp" style="width: 650px; margin: auto">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h4>Подпишись на мой Instagram и получи скидку <b>3%</b></h4>
+
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                {% for z in inst_img %}
+                    <div class="col-md-4 col-sm-4 text-center animate-box">
+                        <div class="work-grid" style="background-image: url({{ z.instagram_photo.url }});">
+                            <div class="desc">
+                                <a href="https://www.instagram.com/beauti_room_by_alina/"><span
+                                        class="cat">@beauty_room_by_alina</span></a>
+                                <p>
+                                    <span class="download"><a
+                                            href="{{ z.facebook_link }}"><i
+                                            class="fa fa-facebook"></i></a></span>
+                                    <span class="love"><a
+                                            href="{{ z.instagram_link }}"><i
+                                            class="fa fa-instagram"></i></a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <a style="margin-top: 5px; z-index: 0;"
+                       href="https://www.instagram.com/beauty_room_by_alina/?utm_source=ig_profile_share&igshid=qf3eq7dfthap"
+                       class="bubbly-button">Перейти в Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL -->
+
+
+    <div class="modal1-overlay">
+        <div class="modal1">
+
+            <a class="close-modal1">
+                <svg viewBox="0 0 20 20">
+                    <path fill="#000000"
+                          d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+                </svg>
+            </a><!-- close modal -->
+
+            <div class="modal1-content">
+                <h2>Заполните форму</h2>
+                <hr class="hrp">
+                <h5 style="color: #32CD32;">Бронирование даты производится<br>по предоплате - 500₽</h5> <br>
+                <form action="{% url 'index' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="group" style="position: relative;margin-bottom: 30px;">
+                        <label for="id_name"></label>
+                        <input class="form-control" id="id_name" , name="name" placeholder="Имя" required>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="group" style="position: relative;margin-bottom: 30px;">
+                        <label for="id_phone"></label>
+                        <input class="form-control" id="id_phone" , name="phone" placeholder="Номер телефона" required>
+                        <span class="bar"></span>
+                    </div>
+                    <br>
+                    <h4>Краткое описание желаемого</h4>
+                    <hr class="hrp">
+                    <h5 style="color: #32CD32;">Постарайся детально описать свою мечту</h5> <br>
+                    <div>
+                        <textarea name="message"
+                                  style="resize: none; width: 90%; border: 1px solid; border-radius: 5px;box-shadow: 0 0 2px rgba(0,0,0,0.2); border-color: #C4C4C4; margin: 0"
+                                  rows="6" placeholder=" Например: Привет) я хочу..." required></textarea> <br>
+                        <button class="bubbly-button" name="submit1" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- modal -->
+    <div class="modal2-overlay">
+        <div class="modal2">
+
+            <a class="close-modal2">
+                <svg viewBox="0 0 20 20">
+                    <path fill="#000000"
+                          d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+                </svg>
+            </a><!-- close modal -->
+
+            <div class="modal2-content">
+                <h2>Помощь с выбором</h2>
+                <hr class="hrp">
+                <br>
+                <div class="formcallback">
+                    <form action="{% url 'index' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="group" style="position: relative;margin-bottom: 30px;">
+                            <input class="form-control" type="text"  id="id_user" name="user" placeholder="Имя" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="group">
+                            <input class="form-control" type="text" id="id_telephone" name="telephone" placeholder="Телефон" required>
+                            <span class="bar"></span>
+                        </div>
+                        <br>
+                        <h5 style="color: #32CD32;">Можно отправить форму здесь или же<br>воспользоваться кнопкой в
+                            правом нижнем углу</h5> <br>
+                        <button class="bubbly-button" name="submit2" type="submit">Отправить</button>
+
+                    </form>
+                </div>
+
+            </div><!-- content -->
+        </div>                                        <!-- modal -->
+    </div><!-- overlay -->
+
+
+
+{% endblock %}
